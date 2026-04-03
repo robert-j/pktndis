@@ -1,0 +1,5 @@
+src/build/
+src/dist/
+src/stamp.inc
+src/STAMP.INC
+.svn/

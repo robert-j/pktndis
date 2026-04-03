@@ -1,0 +1,25 @@
+root = true
+
+[*]
+end_of_line = crlf
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_size = 2
+
+[*.{pas,inc,dpr}]
+indent_size = 2
+
+[*.{c,cpp,h}]
+indent_size = 4
+
+[*.asm]
+indent_size = 8
+indent_style = tab
+
+[*.{pl,sh}]
+end_of_line = lf
+
+[{Makefile,makefile,*.mak}]
+indent_style = tab
+indent_size = 8

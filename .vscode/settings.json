@@ -1,0 +1,55 @@
+{
+  "editor.autoIndent": "full",
+  "editor.formatOnType": true,
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#2a7acf4f"
+    },
+    {
+      "column": 120,
+      "color": "#ff00004f"
+    }
+  ],
+  "files.exclude": {
+    "**/[Dd][Ii][Ss][Tt]/": true,
+    "**/[Bb][Uu][Ii][Ll][Dd]/": true,
+    "**/[Ee][Xx][Ee]/": true,
+    "**/*.tmp": true,
+    "**/*.[Dd][Ss][Kk]": true,
+    "**/*.[Tt][Pp]": true,
+    "**/*.~??": true,
+    "**/*.dsm": true,
+    "**/*.[Mm][Aa][Pp]": true,
+    "**/*.td": true,
+    "**/*.TD": true,
+    "**/*.tr": true,
+    "**/*.TR": true,
+    "tmp": true,
+    "TMP": true,
+    ".tags": true
+  },
+  "files.associations": {
+    "*.mak": "makefile",
+    "*.inf": "ini",
+    "*.inc": "pascal",
+    "*.dpr": "pascal",
+    "*.rc": "cpp"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "markup.underline.link.markdown",
+        "settings": {
+          "foreground": "#1d52bb"
+        }
+      },
+      {
+        "scope": "variable.other.makefile",
+        "settings": {
+          "foreground": "#1d52bb"
+        }
+      }
+    ]
+  }
+}

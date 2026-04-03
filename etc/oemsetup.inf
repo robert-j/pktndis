@@ -1,0 +1,9 @@
+[netcard]
+ms$pktndis = "Packet Driver to NDIS adapter",,NDIS,ethernet,real,ms$pktndis,ms$pktndis_nif
+
+[ms$pktndis]
+devdir=?:pktndis.dos
+device=pktndis.dos,@devdir\pktndis.dos
+
+[ms$pktndis_nif]
+drivername=PKTNDIS$
