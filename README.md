@@ -6,6 +6,11 @@ Manager, Windows for Workgroups, or MS TCP/IP) to operate over emulators
 and environments that only provide a Packet Driver interface — most
 notably `dosemu2`.
 
+This is a retro-computing project. The code is written and built entirely
+in DOS using period-correct tools — Borland Pascal 7, Borland MAKE, and
+a real-mode debugger. The only concession to modernity is a comfortable
+editor.
+
 ## Download
 
 Pre-built binaries are available on the
