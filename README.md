@@ -108,8 +108,8 @@ interfaces:
 - **Transmit path**: NDIS `TransmitChain` calls are forwarded to the
   Packet Driver's `SendPkt`.
 
-The driver operates entirely in real mode and is compatible with 8086
-and above.
+The driver operates entirely in real mode. The release binaries require
+a 386 or above. The reference source can be built for 8086.
 
 ## License
 
