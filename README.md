@@ -40,8 +40,11 @@ dual-stack software to use the NDIS interface.
 
 ## Building from Source
 
-Source code is provided for reference. Official binaries are built with
-a larger, private toolchain and are available on the Releases page.
+Source code is provided for reference. The release binaries are built
+from a larger codebase that provides an optimized runtime, a more
+efficient buffer allocator, and a smaller memory footprint. That
+codebase cannot be open-sourced due to Borland's RTL license terms, so
+official binaries are available on the Releases page.
 
 ### Requirements
 
