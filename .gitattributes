@@ -1,0 +1,3 @@
+# DOS source and support files — preserve CRLF line endings
+src/** eol=crlf
+etc/** eol=crlf
