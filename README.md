@@ -111,6 +111,11 @@ interfaces:
 The driver operates entirely in real mode. The release binaries require
 a 386 or above. The reference source can be built for 8086.
 
+## See Also
+
+[DIS_PKT](https://github.com/robert-j/dispkt) — the reverse: an NDIS
+to Packet Driver shim for DOS.
+
 ## License
 
 [MIT](LICENSE)
