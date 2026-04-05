@@ -208,10 +208,10 @@ const
 type
   PTxBufDesc = ^TxBufDesc;
   TxBufDesc = record
-    TxImmedLen: ushort;   { Byte count of immediate data (max = 64)  }
-    TxImmedPtr: LPBUF;    { Virtual address of Immediate data        }
-    TxDataCount: ushort;  { Number of Data Blocks (max = 8)          }
-    TxDataBlk: array[0..(MAX_TX_DATABLK)-1] of TxDataBlock;
+    TxImmedLen: ushort;   { Byte count of immediate data (max = MAX_IMMED_LEN) }
+    TxImmedPtr: LPBUF;    { Virtual address of Immediate data }
+    TxDataCount: ushort;  { Number of Data Blocks (max = MAX_TX_DATABLK) }
+    TxDataBlk: array[0..0] of TxDataBlock;  { dynamic, TxDataCount elems }
   end;
 
 const
@@ -220,8 +220,8 @@ const
 type
   PTDBufDesc = ^TDBufDesc;
   TDBufDesc = record
-    TDDataCount: ushort;  { Number of Data Blocks (max = 8) }
-    TDDataBlk: array[0..0] of TDDataBlock;
+    TDDataCount: ushort;  { Number of Data Blocks (max = MAX_TD_DATABLK) }
+    TDDataBlk: array[0..0] of TDDataBlock; { dynamic, TDDataCount elems }
   end;
 
   PRxDataBlock = ^RxDataBlock;
@@ -236,8 +236,8 @@ const
 type
   PRxBufDesc = ^RxBufDesc;
   RxBufDesc = record
-    RxDataCount: ushort;  { Number of Data Blocks (max = 8)  }
-    RxDataBlk: array[0..0] of RxDataBlock;
+    RxDataCount: ushort;  { Number of Data Blocks (max = MAX_RX_DATABLK) }
+    RxDataBlk: array[0..0] of RxDataBlock; { dynamic, RxDataCount elems }
   end;
 
   (*
