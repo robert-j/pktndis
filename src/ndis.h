@@ -31,41 +31,44 @@ typedef uint32_t  FARPTR;       /* seg:off pointer in DOS memory */
 #define NAME_LEN  16
 #define ADDR_LEN  16
 
+#define NDIS_VERSION_MAJOR  2
+#define NDIS_VERSION_MINOR  0
+
 /* --------------------------------------------------------------------------
  * Error / return codes (NDIS_)
  * -------------------------------------------------------------------------- */
 
-#define NDIS_SUCCESS                    0x0000
-#define NDIS_WAIT_FOR_RELEASE           0x0001
-#define NDIS_REQUEST_QUEUED             0x0002
-#define NDIS_FRAME_NOT_RECOGNIZED       0x0003
-#define NDIS_FRAME_REJECTED             0x0004
-#define NDIS_FORWARD_FRAME              0x0005
-#define NDIS_OUT_OF_RESOURCE            0x0006
-#define NDIS_INVALID_PARAMETER          0x0007
-#define NDIS_INVALID_FUNCTION           0x0008
-#define NDIS_NOT_SUPPORTED              0x0009
-#define NDIS_HARDWARE_ERROR             0x000A
-#define NDIS_TRANSMIT_ERROR             0x000B
-#define NDIS_NO_SUCH_DESTINATION        0x000C
-#define NDIS_BUFFER_TOO_SMALL           0x000D
-#define NDIS_ALREADY_STARTED            0x0020
-#define NDIS_INCOMPLETE_BINDING         0x0021
-#define NDIS_DRIVER_NOT_INITIALIZED     0x0022
-#define NDIS_HARDWARE_NOT_FOUND         0x0023
-#define NDIS_HARDWARE_FAILURE           0x0024
-#define NDIS_CONFIGURATION_FAILURE      0x0025
-#define NDIS_INTERRUPT_CONFLICT         0x0026
-#define NDIS_INCOMPATIBLE_MAC           0x0027
-#define NDIS_INITIALIZATION_FAILED      0x0028
-#define NDIS_NO_BINDING                 0x0029
-#define NDIS_NETWORK_MAY_NOT_BE_CONNECTED 0x002A
-#define NDIS_INCOMPATIBLE_OS_VERSION    0x002B
-#define NDIS_ALREADY_REGISTERED         0x002C
-#define NDIS_PATH_NOT_FOUND             0x002D
-#define NDIS_INSUFFICIENT_MEMORY        0x002E
-#define NDIS_INFO_NOT_FOUND             0x002F
-#define NDIS_GENERAL_FAILURE            0x00FF
+#define NDIS_SUCCESS                        0x0000
+#define NDIS_ERR_WAIT_FOR_RELEASE           0x0001
+#define NDIS_ERR_REQUEST_QUEUED             0x0002
+#define NDIS_ERR_FRAME_NOT_RECOGNIZED       0x0003
+#define NDIS_ERR_FRAME_REJECTED             0x0004
+#define NDIS_ERR_FORWARD_FRAME              0x0005
+#define NDIS_ERR_OUT_OF_RESOURCE            0x0006
+#define NDIS_ERR_INVALID_PARAMETER          0x0007
+#define NDIS_ERR_INVALID_FUNCTION           0x0008
+#define NDIS_ERR_NOT_SUPPORTED              0x0009
+#define NDIS_ERR_HARDWARE_ERROR             0x000A
+#define NDIS_ERR_TRANSMIT_ERROR             0x000B
+#define NDIS_ERR_NO_SUCH_DESTINATION        0x000C
+#define NDIS_ERR_BUFFER_TOO_SMALL           0x000D
+#define NDIS_ERR_ALREADY_STARTED            0x0020
+#define NDIS_ERR_INCOMPLETE_BINDING         0x0021
+#define NDIS_ERR_DRIVER_NOT_INITIALIZED     0x0022
+#define NDIS_ERR_HARDWARE_NOT_FOUND         0x0023
+#define NDIS_ERR_HARDWARE_FAILURE           0x0024
+#define NDIS_ERR_CONFIGURATION_FAILURE      0x0025
+#define NDIS_ERR_INTERRUPT_CONFLICT         0x0026
+#define NDIS_ERR_INCOMPATIBLE_MAC           0x0027
+#define NDIS_ERR_INITIALIZATION_FAILED      0x0028
+#define NDIS_ERR_NO_BINDING                 0x0029
+#define NDIS_ERR_NETWORK_DISCONNECTED       0x002A
+#define NDIS_ERR_INCOMPATIBLE_OS_VERSION    0x002B
+#define NDIS_ERR_ALREADY_REGISTERED         0x002C
+#define NDIS_ERR_PATH_NOT_FOUND             0x002D
+#define NDIS_ERR_INSUFFICIENT_MEMORY        0x002E
+#define NDIS_ERR_INFO_NOT_FOUND             0x002F
+#define NDIS_ERR_GENERAL_FAILURE            0x00FF
 
 /* --------------------------------------------------------------------------
  * General request opcodes (GR_)
