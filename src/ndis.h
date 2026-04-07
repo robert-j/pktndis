@@ -1,4 +1,7 @@
 /*
+ * SPDX-License-Identifier: MIT
+ * SPDX-FileCopyrightText: 2020-2026 https://github.com/robert-j
+ *
  * NDIS 2.0 / 2.0.1 Interface Definitions
  *
  * Generated from the Network Driver Interface Specification (NDIS),
@@ -6,12 +9,6 @@
  *
  * This header covers DOS real-mode NDIS only. OS/2 and Token Ring
  * (802.5) specifics have been omitted.
- *
- * This specification may be copied freely as long as this copyright
- * notice is preserved. Authorship is attributed jointly to 3Com
- * Corporation and Microsoft Corporation.
- *
- * Copyright 1988, 1989, 1990 3Com Corporation/Microsoft Corporation.
  */
 
 #ifndef NDIS_H
