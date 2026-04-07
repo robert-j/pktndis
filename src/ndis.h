@@ -7,7 +7,7 @@
  * Generated from the Network Driver Interface Specification (NDIS),
  * October 8, 1990, by 3Com Corporation and Microsoft Corporation:
  *
- * https://github.com/robert-j/pktndis/blob/master/docs/ndis-2.0.1.html
+ * https://www.edm2.com/index.php/3Com/Microsoft_LAN_Manager_Network_Driver_Interface_Specification_Version_2.0.1_Final
  *
  * This header covers DOS real-mode NDIS only. OS/2 and Token Ring
  * (802.5) specifics have been omitted.
