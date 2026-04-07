@@ -1,7 +1,7 @@
 src/build/
+src/BUILD/
 src/dist/
+src/DIST/
 src/stamp.inc
 src/STAMP.INC
 .svn/
-.claude/
-CLAUDE.md
