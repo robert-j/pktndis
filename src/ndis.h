@@ -5,7 +5,9 @@
  * NDIS 2.0 / 2.0.1 Interface Definitions
  *
  * Generated from the Network Driver Interface Specification (NDIS),
- * October 8, 1990, by 3Com Corporation and Microsoft Corporation.
+ * October 8, 1990, by 3Com Corporation and Microsoft Corporation:
+ *
+ * https://github.com/robert-j/pktndis/blob/master/docs/ndis-2.0.1.html
  *
  * This header covers DOS real-mode NDIS only. OS/2 and Token Ring
  * (802.5) specifics have been omitted.
