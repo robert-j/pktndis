@@ -433,13 +433,16 @@ typedef struct {
     FARPTR  TxDataPtr;                 /* Data block address */
 } TxDataBlock;
 
+#define MAX_IMMED_LEN       64         /* max TxBufDesc.TxImmedLen */
+#define MAX_TX_DATABLK      8          /* max TxBufDesc.TxData */
+
 /*
  * Transmit Buffer Descriptor
  */
 typedef struct {
     USHORT  TxImmedLen;                /* Immediate data length (max 64) */
     FARPTR  TxImmedPtr;                /* -> immediate data */
-    USHORT  TxDataCount;               /* Number of data blocks */
+    USHORT  TxDataCount;               /* Number of data blocks (max 8) */
     TxDataBlock TxData[1];             /* Variable-length data block array */
 } TxBufDesc;
 
@@ -453,11 +456,13 @@ typedef struct {
     FARPTR  TDDataPtr;                 /* Data block address */
 } TDDataBlock;
 
+#define MAX_TD_DATABLK      8          /* max TDBufDesc.TDData */
+
 /*
  * Transfer Data Buffer Descriptor
  */
 typedef struct {
-    USHORT  TDDataCount;               /* Number of data blocks */
+    USHORT  TDDataCount;               /* Number of data blocks (max 8) */
     TDDataBlock TDData[1];             /* Variable-length data block array */
 } TDBufDesc;
 
@@ -469,11 +474,13 @@ typedef struct {
     FARPTR  RxDataPtr;                 /* Data block address */
 } RxDataBlock;
 
+#define MAX_RX_DATABLK      8          /* max RxBufDesc.RxData */
+
 /*
  * Receive Chain Buffer Descriptor
  */
 typedef struct {
-    USHORT  RxDataCount;               /* Number of data blocks */
+    USHORT  RxDataCount;               /* Number of data blocks (max 8) */
     RxDataBlock RxData[1];             /* Variable-length data block array */
 } RxBufDesc;
 
